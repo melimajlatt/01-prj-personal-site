@@ -15,10 +15,45 @@ body {
 
 /* Hero Section: Big welcome area at the top */
 .hero {
-  background-color: #ffc4d6; /* Soft pink background */
+  background-color: #d4c5b9; /* Warm beige background */
   text-align: center; /* Center the text */
-  padding: 100px 20px; /* Space inside (top/bottom, left/right) */
+  padding: 80px 20px 100px 20px; /* Space inside (top/bottom, left/right) */
   color: #fff; /* White text */
+  position: relative; /* For positioning the banner */
+}
+
+/* Profile photo container with decorative banner */
+.profile-photo {
+  position: relative; /* For positioning */
+  display: inline-block; /* Center the photo */
+  margin-bottom: 20px; /* Space below photo */
+}
+
+/* Decorative banner behind photo */
+.profile-photo::before {
+  content: ''; /* Empty content for decoration */
+  position: absolute; /* Position behind photo */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  width: 200px; /* Banner width */
+  height: 200px; /* Banner height */
+  background-color: #e8dfd6; /* Light beige banner */
+  border-radius: 50%; /* Make it circular */
+  z-index: 0; /* Behind the photo */
+}
+
+/* Circular profile photo */
+.profile-photo img {
+  width: 160px; /* Photo size */
+  height: 160px; /* Photo size */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Crop to fit circle */
+  object-position: center top; /* Focus on face/top of image */
+  border: 5px solid #fff; /* White border around photo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Elegant shadow */
+  position: relative; /* Above the banner */
+  z-index: 1; /* Above the banner */
 }
 
 .hero h1 {
@@ -40,13 +75,63 @@ body {
 
 .bio h2 {
   font-size: 32px; /* Section heading size */
-  color: #ff6b9d; /* Pink accent color */
+  color: #8c7a6b; /* Warm brown accent color */
   margin-bottom: 20px; /* Space below heading */
 }
 
 .bio p {
   font-size: 18px; /* Paragraph text size */
   color: #666; /* Softer gray for body text */
+}
+
+/* Fun Facts Section: Cute boxes with emojis */
+.fun-facts {
+  background-color: #fff; /* White background */
+  padding: 60px 20px; /* Space inside */
+  text-align: center; /* Center the text */
+}
+
+.fun-facts h2 {
+  font-size: 32px; /* Section heading size */
+  color: #8c7a6b; /* Warm brown accent color */
+  margin-bottom: 40px; /* Space below heading */
+}
+
+/* Container for all fact boxes */
+.facts-container {
+  max-width: 1000px; /* Limit width */
+  margin: 0 auto; /* Center the container */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: center; /* Center items */
+}
+
+/* Individual fact box */
+.fact-box {
+  background-color: #f5f0eb; /* Light beige background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 25px; /* Space inside */
+  margin: 12px; /* Space between boxes */
+  width: 220px; /* Fixed width */
+  box-shadow: 0 3px 10px rgba(140, 122, 107, 0.15); /* Warm brown shadow */
+}
+
+/* Big emoji at the top of each box */
+.fact-box .emoji {
+  font-size: 40px; /* Large emoji */
+  margin-bottom: 10px; /* Space below emoji */
+}
+
+.fact-box h3 {
+  color: #8c7a6b; /* Warm brown color for fact title */
+  font-size: 20px; /* Title size */
+  margin-bottom: 8px; /* Space below title */
+}
+
+.fact-box p {
+  color: #666; /* Gray for description */
+  font-size: 15px; /* Description text size */
+  font-style: italic; /* Make placeholder text italic */
 }
 
 /* Skills Section */
@@ -58,7 +143,7 @@ body {
 
 .skills h2 {
   font-size: 32px; /* Section heading size */
-  color: #ff6b9d; /* Pink accent color */
+  color: #8c7a6b; /* Warm brown accent color */
   margin-bottom: 40px; /* Space below heading */
 }
 
@@ -73,7 +158,7 @@ body {
 
 /* Individual skill box */
 .skill-box {
-  background-color: #ffe8f0; /* Light pink background */
+  background-color: #f5f0eb; /* Light beige background */
   border-radius: 10px; /* Rounded corners */
   padding: 30px; /* Space inside */
   margin: 10px; /* Space between boxes */
@@ -82,7 +167,7 @@ body {
 }
 
 .skill-box h3 {
-  color: #ff6b9d; /* Pink color for skill name */
+  color: #8c7a6b; /* Warm brown color for skill name */
   font-size: 24px; /* Skill name size */
   margin-bottom: 10px; /* Space below skill name */
 }
@@ -92,47 +177,48 @@ body {
   font-size: 14px; /* Smaller text */
 }
 
-/* Projects Section */
-.projects {
+/* Coursework Experience Section */
+.coursework {
   padding: 60px 20px; /* Space inside */
   text-align: center; /* Center the text */
 }
 
-.projects h2 {
+.coursework h2 {
   font-size: 32px; /* Section heading size */
-  color: #ff6b9d; /* Pink accent color */
+  color: #8c7a6b; /* Warm brown accent color */
   margin-bottom: 40px; /* Space below heading */
 }
 
-/* Container for all project cards */
-.project-list {
-  max-width: 1000px; /* Limit width */
+/* Container for all course boxes */
+.coursework-list {
+  max-width: 900px; /* Limit width */
   margin: 0 auto; /* Center the container */
   display: flex; /* Use flexbox for layout */
-  flex-wrap: wrap; /* Allow wrapping */
+  flex-wrap: wrap; /* Allow wrapping to next line */
   justify-content: center; /* Center items */
 }
 
-/* Individual project card */
-.project-card {
+/* Individual course box */
+.course-box {
   background-color: #fff; /* White background */
-  border: 2px solid #ffe8f0; /* Light pink border */
+  border: 2px solid #e8dfd6; /* Light beige border */
   border-radius: 10px; /* Rounded corners */
   padding: 30px; /* Space inside */
-  margin: 15px; /* Space between cards */
-  width: 280px; /* Fixed width */
+  margin: 10px; /* Space between boxes */
+  width: 250px; /* Fixed width */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.project-card h3 {
-  color: #ff6b9d; /* Pink color for project name */
-  font-size: 22px; /* Project name size */
-  margin-bottom: 10px; /* Space below project name */
+.course-box h3 {
+  color: #8c7a6b; /* Warm brown color for course name */
+  font-size: 20px; /* Course name size */
+  margin-bottom: 10px; /* Space below course name */
 }
 
-.project-card p {
+.course-box p {
   color: #666; /* Gray for description */
-  font-size: 16px; /* Description text size */
+  font-size: 14px; /* Description text size */
+  font-style: italic; /* Make placeholder text italic */
 }
 
 /* Contact Section */
@@ -144,7 +230,7 @@ body {
 
 .contact h2 {
   font-size: 32px; /* Section heading size */
-  color: #ff6b9d; /* Pink accent color */
+  color: #8c7a6b; /* Warm brown accent color */
   margin-bottom: 20px; /* Space below heading */
 }
 
@@ -155,7 +241,7 @@ body {
 }
 
 .contact a {
-  color: #ff6b9d; /* Pink color for links */
+  color: #8c7a6b; /* Warm brown color for links */
   text-decoration: none; /* Remove underline */
 }
 
@@ -165,7 +251,7 @@ body {
 
 /* Footer: Bottom section */
 footer {
-  background-color: #ffc4d6; /* Soft pink background */
+  background-color: #d4c5b9; /* Warm beige background */
   text-align: center; /* Center the text */
   padding: 20px; /* Space inside */
   color: #fff; /* White text */
