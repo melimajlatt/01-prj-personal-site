@@ -1,1 +1,173 @@
-/* Add you CSS here */
+/* Reset default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up the body with a nice font and background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #faf8f5; /* Soft cream background */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+/* Hero Section: Big welcome area at the top */
+.hero {
+  background-color: #ffc4d6; /* Soft pink background */
+  text-align: center; /* Center the text */
+  padding: 100px 20px; /* Space inside (top/bottom, left/right) */
+  color: #fff; /* White text */
+}
+
+.hero h1 {
+  font-size: 48px; /* Large heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.hero p {
+  font-size: 20px; /* Subtitle size */
+}
+
+/* Bio Section: About me area */
+.bio {
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center the section */
+  padding: 60px 20px; /* Space inside */
+  text-align: center; /* Center the text */
+}
+
+.bio h2 {
+  font-size: 32px; /* Section heading size */
+  color: #ff6b9d; /* Pink accent color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.bio p {
+  font-size: 18px; /* Paragraph text size */
+  color: #666; /* Softer gray for body text */
+}
+
+/* Skills Section */
+.skills {
+  background-color: #fff; /* White background */
+  padding: 60px 20px; /* Space inside */
+  text-align: center; /* Center the text */
+}
+
+.skills h2 {
+  font-size: 32px; /* Section heading size */
+  color: #ff6b9d; /* Pink accent color */
+  margin-bottom: 40px; /* Space below heading */
+}
+
+/* Container for all skill boxes */
+.skill-list {
+  max-width: 900px; /* Limit width */
+  margin: 0 auto; /* Center the container */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: center; /* Center items */
+}
+
+/* Individual skill box */
+.skill-box {
+  background-color: #ffe8f0; /* Light pink background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Space inside */
+  margin: 10px; /* Space between boxes */
+  width: 250px; /* Fixed width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.skill-box h3 {
+  color: #ff6b9d; /* Pink color for skill name */
+  font-size: 24px; /* Skill name size */
+  margin-bottom: 10px; /* Space below skill name */
+}
+
+.skill-box p {
+  color: #666; /* Gray for description */
+  font-size: 14px; /* Smaller text */
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 20px; /* Space inside */
+  text-align: center; /* Center the text */
+}
+
+.projects h2 {
+  font-size: 32px; /* Section heading size */
+  color: #ff6b9d; /* Pink accent color */
+  margin-bottom: 40px; /* Space below heading */
+}
+
+/* Container for all project cards */
+.project-list {
+  max-width: 1000px; /* Limit width */
+  margin: 0 auto; /* Center the container */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center items */
+}
+
+/* Individual project card */
+.project-card {
+  background-color: #fff; /* White background */
+  border: 2px solid #ffe8f0; /* Light pink border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Space inside */
+  margin: 15px; /* Space between cards */
+  width: 280px; /* Fixed width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.project-card h3 {
+  color: #ff6b9d; /* Pink color for project name */
+  font-size: 22px; /* Project name size */
+  margin-bottom: 10px; /* Space below project name */
+}
+
+.project-card p {
+  color: #666; /* Gray for description */
+  font-size: 16px; /* Description text size */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff; /* White background */
+  text-align: center; /* Center the text */
+  padding: 60px 20px; /* Space inside */
+}
+
+.contact h2 {
+  font-size: 32px; /* Section heading size */
+  color: #ff6b9d; /* Pink accent color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.contact p {
+  font-size: 18px; /* Paragraph text size */
+  color: #666; /* Gray text */
+  margin-bottom: 10px; /* Space below each paragraph */
+}
+
+.contact a {
+  color: #ff6b9d; /* Pink color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer: Bottom section */
+footer {
+  background-color: #ffc4d6; /* Soft pink background */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Space inside */
+  color: #fff; /* White text */
+  font-size: 14px; /* Small text */
+}
